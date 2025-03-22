@@ -77,7 +77,7 @@ function pushHistoryArray(operation, a, b, x) {
 //displays the calculation history
 function displayHistory() {
     console.log(history)
-    alert(history)
+    alert("Check console")
 }
 
 
