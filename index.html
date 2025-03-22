@@ -5,4 +5,19 @@
         <title>Basic Javascript Calculator</title>
         <script src="index.js"></script>
     </head>
+    <body>
+        <input id="a" type="number">
+        
+        <select id="operation">
+            <option>+</option>
+            <option>-</option>
+            <option>*</option>
+            <option>/</option>
+        </select>
+
+        <input id="b" type="number">
+        
+        <button onclick="calculate()">Calculate</button>
+        <button onclick="displayHistory()">Show calculation history</button>
+    </body>
 </html>

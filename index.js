@@ -1,8 +1,9 @@
 //Hostory variable stores the result of each calculation as an object
 let history = [];
 //Sets the variables for the two operands
-let a = 8;
-let b = 0;
+let a;
+let b;
+
 
 //accepts 2 variables and adds them then 
 //logs result to console and pushes calculation to history
@@ -74,13 +75,32 @@ function pushHistoryArray(operation, a, b, x) {
 }
 
 //displays the calculation history
-function displayHistory(history) {
+function displayHistory() {
     console.log(history)
+    alert(history)
 }
 
 
-add(a,b);
-subtract(a,b);
-multiply(a,b);
-divide(a,b);
-displayHistory(history);
+function calculate() {
+    let a = parseFloat(document.getElementById("a").value);
+    let b = parseFloat(document.getElementById("b").value);
+    let operation = document.getElementById("operation").value;
+    
+    switch(operation) {
+        case "+" : 
+            add(a, b);
+            
+            break;
+        case "-" : 
+            subtract(a, b);
+            break;
+        
+        case "*" : 
+            multiply(a, b);
+            break;
+        case "/" : 
+            divide(a, b);
+            break;
+    }
+
+}
