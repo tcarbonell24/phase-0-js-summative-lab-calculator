@@ -18,6 +18,7 @@ function add(a, b) {
     let x = a + b;
     pushHistoryArray(operation, a, b, x);
     console.log(a + " + " + b + " = " + x);
+    alert(a + " + " + b + " = " + x);
 }
 
 //accepts 2 variables and subtracts the second from the first then 
@@ -33,6 +34,7 @@ function subtract(a, b) {
     let x = a - b;
     pushHistoryArray(operation, a, b, x);
     console.log(a + " - " + b + " = " + x);
+    alert(a + " - " + b + " = " + x);
 }
 
 //accepts 2 variables and adds them then
@@ -48,6 +50,7 @@ function multiply(a, b) {
     let x = a * b;
     pushHistoryArray(operation, a, b, x);
     console.log(a + " * " + b + " = " + x);
+    alert(a + " * " + b + " = " + x);
 }
 
 //accepts 2 variables and divides the first by the second then
@@ -64,6 +67,7 @@ function divide(a, b) {
         let x = a / b;
         pushHistoryArray(operation, a, b, x);
         console.log(a + " / " + b + " = " + x);
+        alert(a + " / " + b + " = " + x);
     }else{
         console.log("Error: b cannot be 0")
     }
